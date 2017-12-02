@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+  <?php include "../../menucon.php"; ?>
   <div class="container">
   <h2>Danh sach nguoi dung</h2>
   <div class="row">
@@ -44,8 +45,8 @@
     							echo "User";
     							break;
     					}; ?>
-    					<td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>;
-    					<td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>;
+    					<td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>
+    					<td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>
     				</tr>
 		<?php   }
     		}
@@ -53,5 +54,9 @@
     </tbody>
   </table>
 </div>
+  <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>

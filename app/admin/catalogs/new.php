@@ -8,6 +8,10 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
   </head>
   <body>
+  <?php include "../../menucon.php"; ?>
+  <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>    
   <div class="wrapper">
     <form method="post" action="create.php">
       <div class="row">

@@ -9,16 +9,20 @@
     <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+   <?php include "../../menucon.php"; ?>
+   <script src="../../../public/js/jquery.min.js"></script>
+   <script src="../../../public/js/bootstrap.min.js"></script>
+   <script src="../../../public/js/bootstrap.bundle.min.js"></script>
   <div class="container">
-  <h2>Danh sach chuyen muc</h2>
+   <h2>Danh sach chuyen muc</h2>
   <div class="row">
         <i class="flash"><?php if(isset($_SESSION["flash"])) echo $_SESSION["flash"]; ?></i>
       </div>
   <table class="table">
     <thead>
       <tr>
-        <th>name</th>
-        <th>descripson</th>
+        <th>Name</th>
+        <th>Descripson</th>
         <th>Edit</th>
         <th>Delete</th>
       </tr>
@@ -32,13 +36,14 @@
             <tr>
               <td><?php echo $row["name"]; ?></td>
               <td><?php echo $row["description"]; ?></td>
-              <td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>;
-              <td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>;
+              <td><a href="edit.php?id=<?php echo $row["id"];?>">Edit</a></td>
+              <td><a href="delete.php?id=<?php echo $row["id"];?>">Delete</a></td>
           <?php   }
         }
       ?>
     </tbody>
   </table>
+ 
 </div>
 </body>
 </html>

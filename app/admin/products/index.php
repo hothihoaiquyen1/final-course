@@ -1,7 +1,7 @@
 <?php session_start(); ?>
 <?php require_once "../../../db/mysql.php"; ?>
 <?php
-  define("URL_IMAGE", "http://localhost/doanphp/final-course/public/uploads/");
+  define("URL_IMAGE", "http://localhost:8080/final-course/public/uploads/"); 
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,6 +12,10 @@
   <link rel="stylesheet" type="text/css" href="../../../public/css/custom.css">
 </head>
 <body>
+  <?php include "../../menucon.php"; ?>
+  <script src="../../../public/js/jquery.min.js"></script>
+  <script src="../../../public/js/bootstrap.min.js"></script>
+  <script src="../../../public/js/bootstrap.bundle.min.js"></script>
   <div class="container">
   <h2>Danh sách</h2>
   <div class="row">
@@ -51,6 +55,7 @@
     ?>
     </tbody>
   </table>
+  
 </div>
 </body>
 </html>
